@@ -1,2 +1,2 @@
-# JogosC
+# Jogos em C
  Jogos criados em C 
