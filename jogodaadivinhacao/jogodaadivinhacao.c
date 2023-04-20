@@ -39,7 +39,8 @@ int main()
 
 	scanf("%d", &nivel);
 
-	switch(nivel) {
+	switch (nivel)
+	{
 	case 1:
 		totaldetentativas = 20;
 		break;
@@ -51,7 +52,8 @@ int main()
 		break;
 	}
 
-	for (int i = 1; i <= totaldetentativas; i++) {
+	for (int i = 1; i <= totaldetentativas; i++)
+	{
 
 		printf("-> Tentativa %d de %d\n", i, totaldetentativas);
 		printf("Chute um número: \n");
@@ -62,17 +64,20 @@ int main()
 			printf("Você não pode chutar números negativos\n");
 			i--;
 			continue;
-		}	
+		}
 
 		acertou = chute == numerosecreto;
 
-		if (acertou) {
+		if (acertou)
+		{
 			break;
 		}
-		else if (chute > numerosecreto) {
+		else if (chute > numerosecreto)
+		{
 			printf("\nSeu chute foi maior do que o número secreto!\n\n");
 		}
-		else {
+		else
+		{
 			printf("\nSeu chute foi menor do que o número secreto!\n\n");
 		}
 		// calcula a quantidade de pontos
@@ -80,7 +85,8 @@ int main()
 		pontos = pontos - pontosperdidos;
 	}
 	printf("\n");
-	if (acertou) {
+	if (acertou)
+	{
 		printf("             00000000000               \n");
 		printf("         0000000000000000000           \n");
 		printf("       000000  000000000  000000       \n");
@@ -88,7 +94,7 @@ int main()
 		printf("   00000000  #   00000   #  00000000   \n");
 		printf("  0000000000    0000000    0000000000  \n");
 		printf(" 0000000000000000000000000000000000000 \n");
-		printf(" 0000000000000000000000000000000000000 \n"); 
+		printf(" 0000000000000000000000000000000000000 \n");
 		printf(" 0000  0000000000000000000000000  0000 \n");
 		printf("  0000  00000000000000000000000  0000  \n");
 		printf("   0000  000000000000000000000  0000   \n");
@@ -98,8 +104,9 @@ int main()
 		printf("           0000000000000000            \n");
 		printf("\nParabéns! Você acertou!\n");
 		printf("Você fez %2.f pontos. Até a próxima!\n\n", pontos);
-
-	}	else {
+	}
+	else
+	{
 
 		printf("     \\|/ ____ \\|/      \n");
 		printf("      @~/  ,. \\~@       \n");
