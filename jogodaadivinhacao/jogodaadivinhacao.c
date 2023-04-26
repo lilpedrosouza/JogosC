@@ -113,6 +113,6 @@ int main()
 		printf("     /_( \\___/ )_\\     \n");
 		printf("        \\___U_/         \n");
 
-		printf("\nVocê perdeu! Tente novamente!\n\n");
+		printf("\nVocê perdeu! Mas na próxima tenho certeza que vai conseguir!\n\n");
 	}
 }
