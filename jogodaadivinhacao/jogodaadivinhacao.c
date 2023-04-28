@@ -115,4 +115,5 @@ int main()
 
 		printf("\nVocê perdeu! Mas na próxima tenho certeza que vai conseguir!\n\n");
 	}
+	system("pause");
 }
